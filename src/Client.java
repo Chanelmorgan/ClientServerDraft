@@ -30,7 +30,7 @@ public class Client {
 
             while (true) {
                 // sends message to server
-                String messageToSend = scanner.next();
+                String messageToSend = scanner.nextLine().trim();
                 bufferedWriter.write(messageToSend);
                 bufferedWriter.newLine();
                 // writes a line separator to the  underlying streams.
